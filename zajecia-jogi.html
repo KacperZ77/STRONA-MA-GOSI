@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Zajęcia jogi — Małgosia Marciniak</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-yoga .subpage { font-style: italic; }
+        .page-yoga .subpage-hero h1 { font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: 1.12; }
+        .page-yoga h2 { margin-bottom: 22px; color: var(--header-deep); font-size: clamp(1.9rem, 3vw, 2.65rem); line-height: 1.25; }
+        .page-yoga .subpage-row + .subpage-row { margin-top: clamp(40px, 6vw, 76px); }
+        .page-yoga .subpage-photo { background-color: var(--beige); }
+        .page-yoga .text-points { font-size: 1.05rem; line-height: 1.8; margin: 0 0 22px; padding-left: 21px; }
+        .page-yoga .text-points li { margin-bottom: 10px; padding-left: 5px; }
+        .page-yoga .text-points li::marker { color: var(--accent); }
+        .page-yoga .subpage-text > :last-child { margin-bottom: 0; }
+        .page-yoga .yoga-invitation { max-width: 740px; margin: clamp(44px, 6vw, 76px) auto 0; padding-top: 32px; border-top: 1px solid var(--beige-dark); text-align: center; }
+        .page-yoga .yoga-invitation p { margin-bottom: 12px; }
+        .page-yoga .yoga-invitation p:last-child { color: var(--text-soft); font-size: 1.1rem; margin-bottom: 0; }
+        @media (max-width: 820px) {
+            .page-yoga .subpage-photo { min-height: clamp(260px, 65vw, 390px); }
+        }
+    </style>
+</head>
+
+<body class="page-yoga">
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span>Małgosia Marciniak</span>
+                <small>Terapia Self</small>
+            </a>
+
+            <button class="menu-button" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <a href="index.html#start">Start</a>
+                <a href="index.html#wspolpraca">Współpraca</a>
+                <a href="index.html#o-mnie">O mnie</a>
+                <a href="index.html#kontakt">Kontakt</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="subpage">
+        <section class="subpage-hero">
+            <div>
+                <p class="eyebrow">Ciało i uważność</p>
+                <h1>Zajęcia jogi</h1>
+            </div>
+        </section>
+        
+        <div class="subpage-alternating">
+            <section class="subpage-row" aria-labelledby="yoga-benefits">
+                <div class="subpage-photo subpage-photo-primary" role="img" aria-label="Zajęcia jogi"></div>
+                <div class="subpage-text">
+                    <p class="text-label">Chwila tylko dla Ciebie</p>
+                    <h2 id="yoga-benefits">Co znajdziesz na moich zajęciach?</h2>
+                    <p class="text-lead">Spokojny oddech, uważny ruch i przestrzeń, w której możesz po prostu być sobą.</p>
+                    <ul class="text-points">
+                        <li>asany dopasowane do Twoich możliwości,</li>
+                        <li>atmosferę bez presji i porównywania,</li>
+                        <li>trochę wzmacniania, trochę rozciągania i dużo ulgi,</li>
+                        <li>przyjemne zmęczenie i czas na długą relaksację oraz głębokie odprężenie,</li>
+                        <li>przestrzeń, by wzmocnić ciało, wyciszyć umysł i otulić swoje serce,</li>
+                        <li>satysfakcję, że zrobiłaś coś dobrego dla swojego ciała i głowy.</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="subpage-row subpage-row-reverse" aria-labelledby="yoga-no-pressure">
+                <div class="subpage-text">
+                    <p class="text-label">Możesz odpuścić</p>
+                    <h2 id="yoga-no-pressure">Czego tu nie znajdziesz?</h2>
+                    <ul class="text-points">
+                        <li>pośpiechu i presji,</li>
+                        <li>porównywania i oceniania,</li>
+                        <li>rywalizacji ani konkursu na najbardziej skomplikowaną asanę,</li>
+                        <li>coachingu, zakresu obowiązków ani planu do wykonania,</li>
+                        <li>krótkiej relaksacji w biegu,</li>
+                        <li>biegania, skoków ani płytkiego oddechu,</li>
+                        <li>tyrad w sanskrycie ani obowiązku stania na głowie.</li>
+                    </ul>
+                    <p class="text-quote">Nie musisz być rozciągnięta jak gumka recepturka, znać sanskrytu ani umieć stać na głowie — spokojnie, nawet mata nie wymaga od Ciebie perfekcji.</p>
+                </div>
+                <div class="subpage-photo subpage-photo-secondary" role="img" aria-label="Spokojna praktyka jogi"></div>
+            </section>
+            <div class="yoga-invitation">
+                <p class="text-lead">Przyjdź taka, jaka jesteś, i po prostu usiądź na macie.</p>
+                <p>Ja Cię poprowadzę dalej.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <p>© 2026 Małgosia Marciniak</p>
+        <p>Zajęcia jogi</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>

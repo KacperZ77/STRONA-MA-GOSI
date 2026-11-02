@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Małgosia Marciniak — Terapia Self</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-card .contact-invitation {
+            max-width: 920px;
+            margin: 0 auto 26px;
+            font-style: italic;
+            font-size: clamp(1.85rem, 3.6vw, 3rem);
+            line-height: 1.35;
+        }
+        .contact-card .contact-description { font-style: italic; }
+    </style>
+    <style>
+        #start .hero-content > .button { margin-top: 18px; }
+        @media (max-width: 640px) {
+            #start.hero {
+                min-height: 100vh;
+                min-height: 100svh;
+                padding: 112px 24px 42px;
+            }
+            #start .hero-content { max-width: 420px; margin-inline: auto; }
+            #start .eyebrow { margin-bottom: 24px; font-size: 0.7rem; letter-spacing: 0.18em; }
+            #start .hero-content h2 { margin: 0 auto 24px; font-size: clamp(1.9rem, 7.5vw, 2.55rem); line-height: 1.18; text-wrap: balance; }
+            #start .hero-content h3 { max-width: 34ch; margin: 0 auto 24px; font-size: clamp(1.15rem, 4.7vw, 1.35rem); line-height: 1.55; text-wrap: pretty; }
+            #start .hero-content h3 br { display: none; }
+            #start blockquote { margin: 0 auto 0; font-size: 0.95rem; line-height: 1.6; }
+            #start .hero-content > .button { margin-top: 34px; min-height: 48px; padding: 12px 28px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAGŁÓWEK -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span>Małgosia Marciniak</span>
+                <small>Terapia Self</small>
+            </a>
+
+            <button class="menu-button" type="button" aria-label="Otwórz menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="main-nav" aria-label="Menu główne">
+                <a href="#start">Start</a>
+                <a href="#wspolpraca">Współpraca</a>
+                <a href="#o-mnie">O mnie</a>
+                <a class="nav-contact" href="#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="start">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="images/hero.mp4" type="video/mp4">
+            </video>
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">Dobrze, że jesteś</p>
+                <h2>Nazywam się Małgosia Marciniak</h2>
+                <h3>
+                    Jestem psychoterapeutką i instruktorką jogi,<br>
+                    ale przede wszystkim jestem Kobietą,<br>
+                    która zaprasza Ciebie do swojej przestrzeni.<br>
+                    Cieszę się, że tu jesteś.
+                </h3>
+                <blockquote>
+                    „Zmiana zaczyna się wtedy, gdy pozwalamy sobie być naprawdę sobą.”
+                </blockquote>
+                <a class="button button-primary" href="#kontakt">Umów wizytę</a>
+            </div>
+        </section>
+
+        <!-- WSPÓŁPRACA -->
+        <section class="section services-section" id="wspolpraca">
+            <div class="section-heading">
+                <p class="eyebrow">Możliwości współpracy</p>
+                <h3>
+                     Spójrz proszę i poczuj, która forma spotkania jest Tobie najbliższa.
+                </h3>
+                <blockquote>
+                     „Zmiana występuje wtedy, gdy stajesz sie tym kim jesteś, a nie wtedy gdy próbujesz się stać tym kim nie jesteś”  - Fritz Perls
+                </blockquote>
+                
+            </div>
+
+            <div class="services-grid">
+                <a class="service-card service-therapy" href="psychoterapia-indywidualna.html" aria-label="Psychoterapia — zobacz więcej">
+                    <div class="service-image"></div>
+                    <div class="service-shade"></div>
+                    <div class="service-content">
+                        <h3>Psychoterapia Indywidualna</h3>
+                    </div>
+                </a>
+
+                <a class="service-card service-group" href="warsztaty-rozwojowe.html" aria-label="Warsztaty grupowe — zobacz więcej">
+                    <div class="service-image"></div>
+                    <div class="service-shade"></div>
+                    <div class="service-content">
+                        <h3>Warsztaty grupowe</h3>
+                    </div>
+                </a>
+
+                <a class="service-card service-yoga" href="zajecia-jogi.html" aria-label="Joga Gestalt — zobacz więcej">
+                    <div class="service-image"></div>
+                    <div class="service-shade"></div>
+                    <div class="service-content">
+                        <h3>Zajęcia <br> Jogi</h3>
+                    </div>
+                </a>
+
+                <a class="service-card service-retreat" href="wyjazdy-rozwojowe.html" aria-label="Wyjazdy rozwojowe — zobacz więcej">
+                    <div class="service-image"></div>
+                    <div class="service-shade"></div>
+                    <div class="service-content">
+                        <h3>Wyjazdy rozwojowe</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- O MNIE -->
+        <section class="section about-section" id="o-mnie">
+            <div class="about-image" role="img" aria-label="Zdjęcie Małgosi Marciniak"></div>
+            <div class="about-content">
+                <p class="eyebrow">O mnie</p>
+                <h2>Nazywam się Małgosia Marciniak</h2>
+                <p class="lead">Towarzyszę osobom, które chcą lepiej rozumieć siebie, swoje emocje i relacje.</p>
+                <p>W pracy łączę uważną rozmowę, podejście Gestalt oraz kontakt z ciałem.</p>
+                <a class="button button-outline" href="o-mnie.html">Czytaj więcej</a>
+            </div>
+        </section>
+
+        <!-- KONTAKT -->
+        <section class="section contact-section" id="kontakt">
+            <div class="contact-card">
+                <p class="eyebrow">Kontakt</p>
+                <h2 class="contact-invitation">Zapraszam do kontaktu. Przyjdź i poczuj, czy to ja jestem właściwą osobą do relacji terapeutycznej z Tobą.</h2>
+                <p class="contact-description">Wybierz najwygodniejszą formę kontaktu lub umów się na wizytę przez Booksy.</p>
+
+                <div class="contact-options">
+                    <a class="contact-option" href="https://wa.me/48123456789" target="_blank" rel="noreferrer">
+                        <span class="contact-icon">WA</span><strong>WhatsApp</strong><small>Napisz wiadomość</small>
+                    </a>
+                    <a class="contact-option" href="sms:+48123456789">
+                        <span class="contact-icon">SMS</span><strong>Wiadomość SMS</strong><small>+48 123 456 789</small>
+                    </a>
+                    <!-- BOOKSY: dodaj do poniższego znacznika a: href="TWÓJ_LINK_DO_BOOKSY" -->
+                    <a class="contact-option contact-booksy" id="booksy-link">
+                        <span class="contact-icon" aria-hidden="true">B</span><strong>Booksy</strong><small>Umów wizytę</small>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Małgosia Marciniak</p>
+        <p>PSYCHOTERAPIA · JOGA · WARSZTATY · WYJAZDY ROZWOJOWE</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

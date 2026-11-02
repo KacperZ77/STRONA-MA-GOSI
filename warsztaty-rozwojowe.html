@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warsztaty grupowe — Małgosia Marciniak</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .page-workshops .subpage { font-style: italic; }
+        .page-workshops .subpage-hero h1 { font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: 1.12; }
+        .page-workshops .workshop-section { margin-top: clamp(44px, 6vw, 76px); }
+        .page-workshops .workshop-panel { padding: clamp(24px, 4vw, 48px); background: var(--beige); border-radius: 32px; }
+        .page-workshops h2 { margin-bottom: 22px; color: var(--header-deep); font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.25; }
+        .page-workshops .workshop-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 64px); }
+        .page-workshops .workshop-copy { color: var(--text-soft); font-size: 1.06rem; line-height: 1.85; }
+        .page-workshops .text-points { font-size: 1.04rem; line-height: 1.75; padding-left: 21px; }
+        .page-workshops .text-points li { padding-left: 4px; margin-bottom: 9px; }
+        .page-workshops .text-points li::marker { color: var(--accent); }
+        .page-workshops .workshop-panel .text-points { margin: 0; }
+        .page-workshops .workshop-note { max-width: 760px; margin: clamp(44px, 6vw, 72px) auto 0; padding: 28px 0 0; border-top: 1px solid var(--beige-dark); text-align: center; }
+        .page-workshops .workshop-note p:last-child { margin-bottom: 0; }
+        .page-workshops .subpage-photo { background-color: var(--beige); }
+        @media (max-width: 820px) {
+            .page-workshops .workshop-grid { grid-template-columns: 1fr; gap: 24px; }
+            .page-workshops .workshop-panel .workshop-grid { gap: 0; }
+            .page-workshops .subpage-photo { min-height: clamp(260px, 65vw, 390px); }
+        }
+    </style>
+</head>
+
+<body class="page-workshops">
+
+    <!-- GÓRNY NAGŁÓWEK I MENU -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span>Małgosia Marciniak</span>
+                <small>Terapia Self</small>
+            </a>
+
+            <button class="menu-button" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <a href="index.html#start">Start</a>
+                <a href="index.html#wspolpraca">Współpraca</a>
+                <a href="index.html#o-mnie">O mnie</a>
+                <a href="index.html#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- GŁÓWNA TREŚĆ PODSTRONY -->
+    <main class="subpage">
+
+        <!-- TYTUŁ PODSTRONY -->
+        <section class="subpage-hero">
+            <div>
+                <p class="eyebrow">Współpraca grupowa</p>
+                <h1>Warsztaty grupowe</h1>
+            </div>
+        </section>
+
+        <div class="subpage-alternating">
+            <section class="subpage-row" aria-labelledby="workshop-intro">
+                <div class="subpage-photo subpage-photo-primary" role="img" aria-label="Warsztaty grupowe"></div>
+                <div class="subpage-text">
+                    <p class="text-label">Ciało · emocje · relacje</p>
+                    <h2 id="workshop-intro">Przestrzeń na spotkanie ze sobą</h2>
+                    <p class="text-lead">Podczas warsztatów grupowych łączę psychoterapię Gestalt z praktyką jogi.</p>
+                    <p>To połączenie pozwala pracować jednocześnie z ciałem, emocjami, myślami i relacjami z innymi.</p>
+                    <p>Nie chodzi o idealne wykonywanie pozycji ani o „naprawienie się” w kilka godzin. Chodzi o obecność i uważność na to, co dzieje się w ciele i psychice.</p>
+                    <p class="text-quote">Bez oceniania i presji. Z ciekawością tego, co jest teraz.</p>
+                </div>
+            </section>
+
+            <section class="workshop-section workshop-panel" aria-labelledby="workshop-practice">
+                <p class="text-label">Ruch i doświadczenie</p>
+                <h2 id="workshop-practice">Jak wyglądają warsztaty?</h2>
+                <p class="workshop-copy">Podczas spotkań możesz korzystać z różnych form pracy:</p>
+                <div class="workshop-grid">
+                    <ul class="text-points">
+                        <li>łagodnej jogi i świadomego ruchu,</li>
+                        <li>pracy z oddechem,</li>
+                        <li>relaksacji i krótkich medytacji,</li>
+                        <li>ćwiczeń rozwijających kontakt ze sobą,</li>
+                        <li>obserwowania sygnałów płynących z ciała.</li>
+                    </ul>
+                    <ul class="text-points">
+                        <li>rozmów w parach i w grupie,</li>
+                        <li>pracy z emocjami, potrzebami i granicami,</li>
+                        <li>twórczych eksperymentów i improwizacji,</li>
+                        <li>kontaktu z naturą i z grupą.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="subpage-row subpage-row-reverse workshop-section" aria-labelledby="workshop-awareness">
+                <div class="subpage-text">
+                    <p class="text-label">Uważność na siebie</p>
+                    <h2 id="workshop-awareness">Co dzieje się ze mną teraz?</h2>
+                    <p>Praca w nurcie Gestalt pomaga skupić się na chwili obecnej. Uczysz się zauważać:</p>
+                    <ul class="text-points">
+                        <li>co czuję i czego potrzebuję,</li>
+                        <li>jak reaguje moje ciało,</li>
+                        <li>co robię w kontakcie z innymi,</li>
+                        <li>gdzie przekraczam własne granice,</li>
+                        <li>co pomaga mi być bliżej siebie.</li>
+                    </ul>
+                    <p>Joga wspiera ten proces poprzez ruch, oddech i uważność. Dzięki temu możesz nie tylko mówić o swoich doświadczeniach, ale także poczuć je i rozpoznać w ciele.</p>
+                </div>
+                <div class="subpage-photo subpage-photo-secondary" role="img" aria-label="Przestrzeń warsztatów grupowych"></div>
+            </section>
+
+            <div class="workshop-section workshop-grid">
+                <section aria-labelledby="workshop-experience">
+                    <p class="text-label">Przestrzeń do próbowania</p>
+                    <h2 id="workshop-experience">Co możesz zrobić?</h2>
+                    <ul class="text-points">
+                        <li>zatrzymać się i odpocząć od codziennego pośpiechu,</li>
+                        <li>lepiej rozpoznać swoje emocje i potrzeby,</li>
+                        <li>zauważyć napięcia i swoje reakcje na stres,</li>
+                        <li>ćwiczyć asertywność i stawianie granic — mówić „radosne tak” i „stanowcze nie”,</li>
+                        <li>sprawdzić, jak prosić o wsparcie,</li>
+                        <li>doświadczyć bezpiecznego kontaktu z innymi,</li>
+                        <li>znaleźć własne sposoby regulowania napięcia,</li>
+                        <li>przyjrzeć się temu, co utrudnia swobodę i bliskość.</li>
+                    </ul>
+                </section>
+                <section aria-labelledby="workshop-benefits">
+                    <p class="text-label">To, co możesz zabrać ze sobą</p>
+                    <h2 id="workshop-benefits">Co możesz osiągnąć?</h2>
+                    <p class="workshop-copy">Warsztaty mogą pomóc Ci w:</p>
+                    <ul class="text-points">
+                        <li>zwiększeniu świadomości ciała i rozwijaniu uważności,</li>
+                        <li>lepszym rozumieniu siebie i swoich emocji,</li>
+                        <li>budowaniu pewności siebie i poczucia sprawczości,</li>
+                        <li>łagodniejszym podejściu do własnych ograniczeń,</li>
+                        <li>nawiązywaniu bardziej autentycznych relacji,</li>
+                        <li>poprawie dobrostanu i samopoczucia.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="workshop-note" aria-labelledby="workshop-pace">
+                <h2 id="workshop-pace">W swoim tempie</h2>
+                <p class="workshop-copy">Nie musisz być osobą rozciągniętą, doświadczoną ani otwartą na wszystko od pierwszych minut. Każdy uczestnik pracuje w swoim tempie.</p>
+                <p class="text-lead">Wystarczy ciekawość i gotowość, by sprawdzić, co dzieje się ze mną właśnie teraz.</p>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- STOPKA -->
+    <footer class="site-footer">
+        <p>© 2026 Małgosia Marciniak</p>
+        <p>Warsztaty grupowe</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

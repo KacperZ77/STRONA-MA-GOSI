@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyjazdy rozwojowe — Małgosia Marciniak</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-retreats .subpage { font-style: italic; }
+        .page-retreats .subpage-hero h1 { font-size: clamp(2.6rem, 5vw, 4.8rem); line-height: 1.12; }
+        .page-retreats h2 { color: var(--header-deep); font-size: clamp(1.85rem, 3vw, 2.65rem); line-height: 1.25; margin-bottom: 24px; }
+        .page-retreats .retreat-section { margin-top: clamp(44px, 6vw, 76px); }
+        .page-retreats .retreat-copy { color: var(--text-soft); font-size: 1.06rem; line-height: 1.85; }
+        .page-retreats .text-points { font-size: 1.04rem; line-height: 1.8; }
+        .page-retreats .text-points li { margin-bottom: 9px; padding-left: 4px; }
+        .page-retreats .text-points li::marker { color: var(--accent); }
+        .page-retreats .subpage-photo { background-color: var(--beige); }
+        .page-retreats .retreat-duration { display: inline-block; padding: 8px 18px; border: 1px solid var(--beige-dark); border-radius: 30px; color: var(--header-deep); font-size: 0.95rem; }
+        .page-retreats .retreat-relations { padding: clamp(24px, 4vw, 46px) 0; border-top: 1px solid var(--beige-dark); border-bottom: 1px solid var(--beige-dark); }
+        .page-retreats .retreat-relations > h2 { max-width: 650px; }
+        .page-retreats .retreat-relations dl { margin: 30px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 42px; }
+        .page-retreats .retreat-relations dt { margin-bottom: 8px; color: var(--header-deep); font-family: Georgia, 'Times New Roman', serif; font-size: 1.4rem; line-height: 1.35; }
+        .page-retreats .retreat-relations dd { margin: 0; color: var(--text-soft); font-size: 1.04rem; line-height: 1.8; }
+        .page-retreats .retreat-columns { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(28px, 5vw, 68px); align-items: start; }
+        .page-retreats .retreat-places { padding: clamp(24px, 3vw, 38px); background: var(--beige); border-radius: 32px; }
+        .page-retreats .retreat-places ul { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 24px 0 30px; padding: 0; }
+        .page-retreats .retreat-places li { padding: 6px 14px; border: 1px solid var(--beige-dark); border-radius: 24px; color: var(--header-deep); }
+        .page-retreats .retreat-places .text-quote { color: var(--text); line-height: 1.8; }
+        .page-retreats .retreat-closing { max-width: 780px; margin-inline: auto; text-align: center; }
+        .page-retreats .retreat-closing blockquote { margin: 32px 0; color: var(--header-deep); font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.3rem, 2.4vw, 1.7rem); line-height: 1.6; }
+        .page-retreats .retreat-closing blockquote p { margin: 0 0 8px; }
+        .page-retreats .retreat-closing > p:last-child { margin-bottom: 0; }
+        @media (max-width: 820px) {
+            .page-retreats .retreat-relations dl { grid-template-columns: 1fr 1fr; gap: 26px; }
+            .page-retreats .retreat-columns { grid-template-columns: 1fr; }
+            .page-retreats .subpage-photo { min-height: clamp(260px, 65vw, 390px); }
+        }
+        @media (max-width: 540px) {
+            .page-retreats .retreat-relations dl { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body class="page-retreats">
+
+    <!-- GÓRNY NAGŁÓWEK I MENU -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span>Małgosia Marciniak</span>
+                <small>Terapia Self</small>
+            </a>
+
+            <button class="menu-button" aria-label="Otwórz menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <a href="index.html#start">Start</a>
+                <a href="index.html#wspolpraca">Współpraca</a>
+                <a href="index.html#o-mnie">O mnie</a>
+                <a href="index.html#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- GŁÓWNA TREŚĆ PODSTRONY -->
+    <main class="subpage">
+
+        <!-- TYTUŁ PODSTRONY -->
+        <section class="subpage-hero">
+            <div>
+                <p class="eyebrow">Czas dla siebie</p>
+                <h1>Wyjazdy rozwojowe</h1>
+            </div>
+        </section>
+
+        <div class="subpage-alternating">
+            <section class="subpage-row" aria-labelledby="retreat-intro">
+                <div class="subpage-photo subpage-photo-primary" role="img" aria-label="Wyjazdy rozwojowe"></div>
+                <div class="subpage-text">
+                    <p class="text-label">Gestalt · joga · podróżowanie</p>
+                    <h2 id="retreat-intro">Podróż, która zaczyna się w Tobie</h2>
+                    <p class="text-lead">Zapraszamy na wyjazdowe warsztaty rozwojowe łączące psychoterapię Gestalt, jogę i podróżowanie.</p>
+                    <p>Blisko i daleko, w naturze, w nowych miejscach — i przede wszystkim w bliższym kontakcie ze sobą.</p>
+                    <p>To przestrzeń, w której możesz zwolnić, odetchnąć i sprawdzić, kim jesteś, czego potrzebujesz i dokąd naprawdę chcesz iść.</p>
+                    <span class="retreat-duration">Każdy wyjazd trwa co najmniej 7 dni</span>
+                </div>
+            </section>
+
+            <section class="retreat-section retreat-relations" aria-labelledby="retreat-relations">
+                <p class="text-label">Spotkania w podróży</p>
+                <h2 id="retreat-relations">Ze sobą, z innymi, ze światem</h2>
+                <p class="retreat-copy">Podczas warsztatów przyglądamy się pięciu obszarom relacji:</p>
+                <dl>
+                    <div><dt>Ja i moje ciało</dt><dd>Poprzez jogę, oddech i uważny ruch.</dd></div>
+                    <div><dt>Ja i moje emocje</dt><dd>Poprzez pracę w nurcie Gestalt.</dd></div>
+                    <div><dt>Ja i grupa</dt><dd>Poprzez kontakt, rozmowę i wspólne doświadczenia.</dd></div>
+                    <div><dt>Ja i świat</dt><dd>Poprzez spotkanie z naturą, kulturą i nowym miejscem.</dd></div>
+                    <div><dt>Ja w podróży</dt><dd>W spotkaniu z tym, co nieznane, zaskakujące i poza codzienną rutyną.</dd></div>
+                </dl>
+            </section>
+
+            <section class="subpage-row subpage-row-reverse retreat-section" aria-labelledby="retreat-program">
+                <div class="subpage-text">
+                    <p class="text-label">Ruch · odkrywanie · odpoczynek</p>
+                    <h2 id="retreat-program">W rytmie podróży</h2>
+                    <p>W programie mogą znaleźć się:</p>
+                    <ul class="text-points">
+                        <li>poranne praktyki jogi oraz ćwiczenia uważności i oddechu,</li>
+                        <li>warsztaty Gestalt i praca z emocjami, potrzebami i granicami,</li>
+                        <li>rozmowy w parach i w grupie,</li>
+                        <li>spacery, wyprawy i kontakt z naturą,</li>
+                        <li>czas na odpoczynek, refleksję i bycie razem,</li>
+                        <li>odkrywanie lokalnych miejsc, smaków i historii.</li>
+                    </ul>
+                </div>
+                <div class="subpage-photo subpage-photo-secondary" role="img" aria-label="Podróże i wspólne doświadczenia podczas wyjazdów rozwojowych"></div>
+            </section>
+
+            <div class="retreat-section retreat-columns">
+                <section aria-labelledby="retreat-benefits">
+                    <p class="text-label">Nowa perspektywa</p>
+                    <h2 id="retreat-benefits">Co możesz zabrać ze sobą?</h2>
+                    <p class="retreat-copy">Taki wyjazd może pomóc Ci:</p>
+                    <ul class="text-points">
+                        <li>lepiej poznać siebie i zauważyć swoje schematy działania,</li>
+                        <li>odzyskać kontakt z ciałem i rozpoznać własne potrzeby,</li>
+                        <li>wzmocnić poczucie sprawczości i łatwiej stawiać granice,</li>
+                        <li>otworzyć się na relacje,</li>
+                        <li>spojrzeć na swoje życie z nowej perspektywy,</li>
+                        <li>odważyć się na zmianę lub kolejny krok.</li>
+                    </ul>
+                </section>
+                <section class="retreat-places" aria-labelledby="retreat-places">
+                    <p class="text-label">Nasze dotychczasowe podróże</p>
+                    <h2 id="retreat-places">Blisko i daleko</h2>
+                    <ul aria-label="Dotychczasowe kierunki wyjazdów">
+                        <li>Indie</li><li>Maroko</li><li>Teneryfa</li><li>Gozo</li><li>Jurata</li><li>Mielno–Unieście</li>
+                    </ul>
+                    <p class="text-quote">Wkrótce ponownie wyruszamy do Maroka.</p>
+                </section>
+            </div>
+
+            <section class="retreat-section retreat-closing" aria-labelledby="retreat-invitation">
+                <p class="text-label">Wystarczy ciekawość</p>
+                <h2 id="retreat-invitation">Możesz przyjechać tak, jak jesteś</h2>
+                <p class="retreat-copy">Nie musisz mieć doświadczenia w jodze ani znać zasad pracy terapeutycznej. Nie musisz też przyjeżdżać z gotowym celem.</p>
+                <p class="retreat-copy">Wystarczy ciekawość i gotowość, by spotkać się ze sobą — w ruchu, w relacji, w podróży i w tym, co wydarza się tu i teraz.</p>
+                <blockquote>
+                    <p>Bliska podróż może otworzyć daleką perspektywę.</p>
+                    <p>Daleka podróż może przybliżyć Cię do siebie.</p>
+                </blockquote>
+                <p class="retreat-copy">Wyrusz z nami — poznaj nowe miejsca i wróć bliżej siebie.</p>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- STOPKA -->
+    <footer class="site-footer">
+        <p>© 2026 Małgosia Marciniak</p>
+        <p>Wyjazdy rozwojowe</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
